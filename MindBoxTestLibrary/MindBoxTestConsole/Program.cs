@@ -16,7 +16,11 @@ class Program
      */
     static void Main(string[] args)
     {
-        Console.WriteLine("Выберите фигуру площадь которой вы хотите высчитать: 1. Треугольник по формуле трех сторон. 2. Круг по радиусу. ");
+        Console.WriteLine("Выберите фигуру площадь которой вы хотите высчитать: " 
+            + "\n 1. Треугольник по формуле трех сторон." 
+            + "\n 2. Круг по радиусу." 
+            + "\n 3. Объем правильной пирамиды" 
+            + "\n 4. Площадь прямоугольного треугольника");
         int meaning = Convert.ToInt32(Console.ReadLine());
 
         if (meaning == 1)
@@ -29,10 +33,24 @@ class Program
             string circleSquareResult = CircleSquareResult();
             Console.WriteLine("Площадь круга равна: " + circleSquareResult);
         }
+        else if(meaning == 3)
+        {
+            string pyramidVolumeResult = PyramidVolumeResult();
+            Console.WriteLine("Объем пирамиды равен: " + pyramidVolumeResult);
+        }
+        else if( meaning == 4)
+        {
+            string triangleRightSquareResult = RightTriangleSquareResult();
+            Console.WriteLine("Площадь прямоугольного треугольника равна: " + triangleRightSquareResult);
+        }
 
         Console.ReadKey();
     }
 
+    /// <summary>
+    /// Метод для вывода площади треугольника
+    /// </summary>
+    /// <returns></returns>
     public static string TriangleSquareResult()
     {
         TestLibrary library = new TestLibrary();
@@ -51,6 +69,10 @@ class Program
         return result;
     }
 
+    /// <summary>
+    /// Метод для вывода площади круга
+    /// </summary>
+    /// <returns></returns>
     public static string CircleSquareResult()
     {
         TestLibrary library = new TestLibrary();
@@ -59,6 +81,46 @@ class Program
         double radius = Convert.ToDouble(Console.ReadLine());
 
         string result = library.CircleSquare(radius).ToString();
+        return result;
+    }
+    
+    /// <summary>
+    /// Метод для вывода объема правильной пирамиды с любым количеством граней
+    /// </summary>
+    /// <returns></returns>
+    public static string PyramidVolumeResult()
+    {
+        TestLibrary library = new TestLibrary();
+
+        Console.Write("Введите значение стороны основания пирамиды: ");
+        double pyramidSide = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Введите высоту пирамиды ");
+        double h = Convert.ToDouble(Console.ReadLine());
+
+        string result = library.PiramidVolume( pyramidSide, h).ToString();
+
+        return result;
+    }
+
+    /// <summary>
+    /// Метод для вывода прямоугольного треугольника
+    /// </summary>
+    /// <returns></returns>
+    public static string RightTriangleSquareResult()
+    {
+        TestLibrary library = new TestLibrary();
+
+        Console.WriteLine("Введите катеты треугольника: ");
+
+        Console.Write("Катет А: ");
+        double triangleA = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Катет B: ");
+        double triangleB = Convert.ToDouble(Console.ReadLine());
+
+        string result = library.TriangleRightSquare(triangleA, triangleB).ToString();
+
         return result;
     }
 }
