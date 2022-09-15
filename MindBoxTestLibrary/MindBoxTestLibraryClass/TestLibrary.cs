@@ -14,8 +14,9 @@ public class TestLibrary
         // Вычисление полупериметра.
         double halfPerimeter = (triangleA + triangleB + triangleC) / 2;
 
-        //Вычисление площади
-        double squareResult = Math.Sqrt(halfPerimeter * (halfPerimeter - triangleA) * (halfPerimeter - triangleB) * (halfPerimeter - triangleC));
+        // Вычисление площади
+        double squareResult = halfPerimeter * (halfPerimeter - triangleA) * (halfPerimeter - triangleB) * (halfPerimeter - triangleC);
+        squareResult = Math.Sqrt(squareResult);
 
         return squareResult;
     }
@@ -27,7 +28,7 @@ public class TestLibrary
     /// <returns></returns>
     public double CircleSquare(double radius)
     {
-
+        // Вычисление площади
         double squareResult = Math.PI * Math.Pow(radius, 2);
 
         return squareResult;
@@ -42,7 +43,9 @@ public class TestLibrary
     /// <returns></returns>
     public double PiramidVolume(double pyramidSide, double high)
     {
+        // Вычисление объема
         double volumeResult = 0.33333 * high * Math.Pow(pyramidSide,2);
+
         return volumeResult;
     }
 
@@ -55,7 +58,9 @@ public class TestLibrary
     /// <returns></returns>
     public double TriangleRightSquare(double triangleA, double triangleB)
     {
+        // Вычисление площади
         double volumeResult = 0.5 * (triangleA * triangleB);
+
         return volumeResult;
     }
 }
