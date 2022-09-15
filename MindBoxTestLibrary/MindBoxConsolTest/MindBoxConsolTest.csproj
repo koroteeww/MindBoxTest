@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MindBoxTestLibraryClass\MindBoxTestLibraryClass.csproj">
+      <Project>{73f86771-ffa0-4515-93bb-7455f8808f1e}</Project>
+      <Name>MindBoxTestLibraryClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
