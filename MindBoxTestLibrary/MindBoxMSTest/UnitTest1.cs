@@ -1,4 +1,5 @@
 using MindBoxTestLibraryClass;
+using MindBoxTestConsoleClass;
 using System.Runtime.InteropServices;
 
 namespace MindBoxMSTest
@@ -46,10 +47,129 @@ namespace MindBoxMSTest
         {
             // arrange
             var library = new TestLibrary();
-            double triangleA = 40;
-            double triangleB = 95;
-            double triangleC = 60;
-            double expented = 724.9730598442952;
+            double triangleA = 400;
+            double triangleB = 300;
+            double triangleC = 600;
+            double expented = 53326.82251925385;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare4()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = -400;
+            double triangleB = -300;
+            double triangleC = -600;
+            double expented = 53326.82251925385;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare5()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = 4000;
+            double triangleB = 3000;
+            double triangleC = 6000;
+            double expented = 5332682.251925386;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare6()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = -4000;
+            double triangleB = -3000;
+            double triangleC = -6000;
+            double expented = 5332682.251925386;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare7()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = 40000;
+            double triangleB = 30000;
+            double triangleC = 60000;
+            double expented = 533268225.19253856;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare8()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = -40000;
+            double triangleB = -30000;
+            double triangleC = -60000;
+            double expented = 533268225.19253856;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare9()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = 3.78;
+            double triangleB = 5.69;
+            double triangleC = 4.798;
+            double expented = 8.983965954756508;
+
+            // act
+            double result = library.TriangleSquare(triangleA, triangleB, triangleC);
+
+            // assert
+            Assert.AreEqual(expented, result);
+        }
+
+        [TestMethod]
+        public void TriangleSquare10()
+        {
+            // arrange
+            var library = new TestLibrary();
+            double triangleA = -3.78;
+            double triangleB = -5.69;
+            double triangleC = -4.798;
+            double expented = 8.983965954756508;
 
             // act
             double result = library.TriangleSquare(triangleA, triangleB, triangleC);

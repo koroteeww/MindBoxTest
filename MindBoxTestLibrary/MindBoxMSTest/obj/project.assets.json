@@ -1789,6 +1789,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "MindBoxTestConsole/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MindBoxTestLibraryClass": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MindBoxTestConsole.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindBoxTestConsole.dll": {}
+        }
+      },
       "MindBoxTestLibraryClass/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -6268,6 +6281,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "MindBoxTestConsole/1.0.0": {
+      "type": "project",
+      "path": "../MindBoxTestConsole/MindBoxTestConsole.csproj",
+      "msbuildProject": "../MindBoxTestConsole/MindBoxTestConsole.csproj"
+    },
     "MindBoxTestLibraryClass/1.0.0": {
       "type": "project",
       "path": "../MindBoxTestLibraryClass/MindBoxTestLibraryClass.csproj",
@@ -6279,6 +6297,7 @@
       "MSTest.TestAdapter >= 2.2.8",
       "MSTest.TestFramework >= 2.2.8",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
+      "MindBoxTestConsole >= 1.0.0",
       "MindBoxTestLibraryClass >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
@@ -6318,6 +6337,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestConsole\\MindBoxTestConsole.csproj": {
+              "projectPath": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestConsole\\MindBoxTestConsole.csproj"
+            },
             "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestLibraryClass\\MindBoxTestLibraryClass.csproj": {
               "projectPath": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestLibraryClass\\MindBoxTestLibraryClass.csproj"
             }

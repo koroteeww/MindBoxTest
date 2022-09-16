@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MindBoxTestConsole\MindBoxTestConsole.csproj" />
     <ProjectReference Include="..\MindBoxTestLibraryClass\MindBoxTestLibraryClass.csproj" />
   </ItemGroup>
 
