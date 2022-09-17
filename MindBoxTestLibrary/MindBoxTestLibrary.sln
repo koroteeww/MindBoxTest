@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MindBoxTestConsole", "MindB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MindBoxMSTest", "MindBoxMSTest\MindBoxMSTest.csproj", "{BCA7DF32-2B0F-4FC4-964F-220EB87A364F}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MindBoxTestDB", "MindBoxTestDB\MindBoxTestDB.sqlproj", "{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +27,6 @@ Global
 		{BCA7DF32-2B0F-4FC4-964F-220EB87A364F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCA7DF32-2B0F-4FC4-964F-220EB87A364F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCA7DF32-2B0F-4FC4-964F-220EB87A364F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2202FCEC-F8EA-4978-A5D1-E212AE16BADB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,16 +9,41 @@ public class TestLibrary
     /// <param name="triangleB"></param>
     /// <param name="triangleC"></param>
     /// <returns></returns>
-    public double TriangleSquare(double triangleA, double triangleB, double triangleC)
+    public string TriangleArea(double triangleA, double triangleB, double triangleC)
     {
         // Вычисление полупериметра.
         double halfPerimeter = (triangleA + triangleB + triangleC) / 2;
 
         // Вычисление площади
-        double squareResult = halfPerimeter * (halfPerimeter - triangleA) * (halfPerimeter - triangleB) * (halfPerimeter - triangleC);
-        squareResult = Math.Sqrt(squareResult);
+        if (triangleA + triangleB >= triangleC && triangleB + triangleC >= triangleA && triangleA + triangleC >= triangleB)
+        {
+            double areaResult = halfPerimeter * (halfPerimeter - triangleA) * (halfPerimeter - triangleB) * (halfPerimeter - triangleC);
+            areaResult = Math.Sqrt(areaResult);
 
-        return squareResult;
+            // Проверка треугольника на прямой угол
+            TriangleRightChecked(triangleA, triangleB, triangleC);
+
+            return areaResult.ToString();
+        }
+        else
+        {
+            Console.WriteLine("Трегульник с такими сторонами не имеет права не существование!");
+            return null;
+        }
+    }
+
+    public void TriangleRightChecked(double triangleA, double triangleB, double triangleC)
+    {
+        if (Math.Pow(triangleA, 2) + Math.Pow(triangleB, 2) == Math.Pow(triangleC, 2) ||
+        Math.Pow(triangleA, 2) + Math.Pow(triangleC, 2) == Math.Pow(triangleB, 2) ||
+        Math.Pow(triangleB, 2) + Math.Pow(triangleC, 2) == Math.Pow(triangleA, 2))
+        {
+            Console.WriteLine("Этот треугольник прямоугольный");
+        }
+        else
+        {
+            Console.WriteLine("Этот треугольник не прямоугольный");
+        }
     }
 
     /// <summary>
@@ -26,41 +51,34 @@ public class TestLibrary
     /// </summary>
     /// <param name="radius"></param>
     /// <returns></returns>
-    public double CircleSquare(double radius)
+    public string CircleArea(double radius)
     {
-        // Вычисление площади
-        double squareResult = Math.PI * Math.Pow(radius, 2);
-
-        return squareResult;
+        if (radius < 0)
+        {
+            Console.WriteLine("Радиус не может быть отрицательным");
+            return null;
+        }
+        else
+        {
+            // Вычисление площади
+            double areaResult = Math.PI * Math.Pow(radius, 2);
+            return areaResult.ToString();
+        }
     }
 
-    /// <summary>
-    /// Метод для вычисления обьема правильной четырехугольной пирамиды
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="pyramidSide"></param>
-    /// <param name="high"></param>
-    /// <returns></returns>
-    public double PiramidVolume(double pyramidSide, double high)
+    public double N_Angle_Area(double sideRight, int sideCount)
     {
-        // Вычисление объема
-        double volumeResult = 0.33333 * high * Math.Pow(pyramidSide,2);
+        double radius = N_Angle_Area_Radius(sideRight, sideCount);
+        double areaTriangle = Convert.ToDouble(TriangleArea(sideRight, radius, radius));
 
-        return volumeResult;
+        return areaTriangle * sideCount;
     }
 
-    /// <summary>
-    /// Метод для вычисления обьема правильной четырехугольной пирамиды
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="pyramidSide"></param>
-    /// <param name="high"></param>
-    /// <returns></returns>
-    public double TriangleRightSquare(double triangleA, double triangleB)
+    public double N_Angle_Area_Radius(double sideRight, int sideCount)
     {
-        // Вычисление площади
-        double volumeResult = 0.5 * (triangleA * triangleB);
+        double radian = 180 * Math.PI / 180;
+        double radius = sideRight / (2 * Math.Sin(radian / sideCount));
 
-        return volumeResult;
+        return radius;
     }
 }

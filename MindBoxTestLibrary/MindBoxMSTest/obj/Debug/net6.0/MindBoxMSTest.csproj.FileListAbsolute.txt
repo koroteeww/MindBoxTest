@@ -99,3 +99,8 @@ E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\obj\De
 E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\obj\Debug\net6.0\MindBoxMSTest.pdb
 E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\obj\Debug\net6.0\MindBoxMSTest.genruntimeconfig.cache
 E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\obj\Debug\net6.0\ref\MindBoxMSTest.dll
+E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\bin\Debug\net6.0\MindBoxTestConsole.deps.json
+E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\bin\Debug\net6.0\MindBoxTestConsole.runtimeconfig.json
+E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\bin\Debug\net6.0\MindBoxTestConsole.exe
+E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\bin\Debug\net6.0\MindBoxTestConsole.dll
+E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxMSTest\bin\Debug\net6.0\MindBoxTestConsole.pdb
