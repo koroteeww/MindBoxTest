@@ -6310,11 +6310,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxMSTest\\MindBoxMSTest.csproj",
+      "projectUniqueName": "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxMSTest\\MindBoxMSTest.csproj",
       "projectName": "MindBoxMSTest",
-      "projectPath": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxMSTest\\MindBoxMSTest.csproj",
+      "projectPath": "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxMSTest\\MindBoxMSTest.csproj",
       "packagesPath": "C:\\Users\\Астемир\\.nuget\\packages\\",
-      "outputPath": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxMSTest\\obj\\",
+      "outputPath": "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxMSTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6337,11 +6337,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestConsole\\MindBoxTestConsole.csproj": {
-              "projectPath": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestConsole\\MindBoxTestConsole.csproj"
+            "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestConsole\\MindBoxTestConsole.csproj": {
+              "projectPath": "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestConsole\\MindBoxTestConsole.csproj"
             },
-            "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestLibraryClass\\MindBoxTestLibraryClass.csproj": {
-              "projectPath": "E:\\repose\\MindBoxTestProject\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestLibraryClass\\MindBoxTestLibraryClass.csproj"
+            "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestLibraryClass\\MindBoxTestLibraryClass.csproj": {
+              "projectPath": "D:\\GitHubProj\\C# project\\MindBoxTest\\MindBoxTestLibrary\\MindBoxTestLibraryClass\\MindBoxTestLibraryClass.csproj"
             }
           }
         }
@@ -6389,7 +6389,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
