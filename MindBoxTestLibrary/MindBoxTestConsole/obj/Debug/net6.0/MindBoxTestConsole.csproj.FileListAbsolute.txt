@@ -16,3 +16,21 @@ E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\o
 E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.pdb
 E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.genruntimeconfig.cache
 E:\repose\MindBoxTestProject\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\ref\MindBoxTestConsole.dll
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.csproj.AssemblyReference.cache
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.AssemblyInfoInputs.cache
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.AssemblyInfo.cs
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.csproj.CoreCompileInputs.cache
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.dll
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\refint\MindBoxTestConsole.dll
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.pdb
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestConsole.exe
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestConsole.deps.json
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestConsole.runtimeconfig.json
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestConsole.dll
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestConsole.pdb
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestLibraryClass.dll
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\bin\Debug\net6.0\MindBoxTestLibraryClass.pdb
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.csproj.CopyComplete
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\MindBoxTestConsole.genruntimeconfig.cache
+D:\GitHubProj\C# project\MindBoxTest\MindBoxTestLibrary\MindBoxTestConsole\obj\Debug\net6.0\ref\MindBoxTestConsole.dll

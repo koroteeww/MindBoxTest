@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MindBoxTestLibraryClass
 {
-    internal class Rectangle : Figure
+    public class Rectangles : Figure
     {
         double sideA, sideB;
 
-        public Rectangle(double sideA, double sideB)
+        public Rectangles(double sideA, double sideB)
         {
             this.sideA = sideA;
             this.sideB = sideB;

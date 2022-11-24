@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MindBoxTestLibraryClass
 {
-    internal abstract class Figure
+    public abstract class Figure
     {
         public abstract double AreaCount();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MindBoxTestLibraryClass
 {
-    internal class Circle : Figure
+    public class Circle : Figure
     {
         double radius;
 
@@ -29,5 +29,7 @@ namespace MindBoxTestLibraryClass
                     return areaResult;
                 }
         }
+
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MindBoxTestLibraryClass
 {
-    internal class Triangle : Figure
+    public class Triangle : Figure
     {
         double sideA, sideB, sideC;
 
@@ -48,7 +48,7 @@ namespace MindBoxTestLibraryClass
             Math.Pow(sideA, 2) + Math.Pow(sideC, 2) == Math.Pow(sideB, 2) ||
             Math.Pow(sideB, 2) + Math.Pow(sideC, 2) == Math.Pow(sideA, 2))
             {
-                //Console.WriteLine("Этот треугольник прямоугольный");
+                Console.WriteLine("Этот треугольник прямоугольный");
                 return true;
             }
             else

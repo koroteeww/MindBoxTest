@@ -1,6 +1,6 @@
-﻿using MindBoxTestLibraryClass;
-using System;
+﻿using System;
 using System.Drawing;
+using MindBoxTestLibraryClass;
 
 namespace MindBoxTestConsoleClass
 {
@@ -20,7 +20,8 @@ namespace MindBoxTestConsoleClass
             Console.WriteLine("Выберите фигуру площадь которой вы хотите высчитать:"
                 + "\n 1. Треугольник по формуле трех сторон."
                 + "\n 2. Круг по радиусу."
-                + "\n 3. Вычисление любой фигуры");
+                + "\n 3. Прямоугильник по двум сторонам."
+                + "\n 4. Вычисление площади фигуры без знания типа фигуры");
             int meaning = Convert.ToInt32(Console.ReadLine());
 
             if (meaning == 1)
@@ -34,11 +35,15 @@ namespace MindBoxTestConsoleClass
                 string circleAreaResult = CircleAreaResult();
                 if (circleAreaResult != null)
                     Console.WriteLine("Площадь круга равна: " + circleAreaResult);
-            }else if(meaning == 3)
+            }
+            else if (meaning == 3)
             {
-                string anyFigure = AbstractFigureResult();
-                if (anyFigure != null)
-                    Console.WriteLine("Площадь фигуры равна " + anyFigure);
+                string rectangleAreaResult = RectangleAreaResult();
+                if (rectangleAreaResult != null)
+                    Console.WriteLine("Площадь прямоугольника равна: " + rectangleAreaResult);
+            }else if (meaning == 4)
+            {
+                string abstractAreaResult = AbstractFigureResult();
             }
 
             Console.ReadKey();
@@ -50,19 +55,20 @@ namespace MindBoxTestConsoleClass
         /// <returns></returns>
         public static string TriangleAreaResult()
         {
-            TestLibrary library = new TestLibrary();
             Console.WriteLine("Введите длины сторон треугольника: ");
 
             Console.Write("Сторона А: ");
-            double triangleA = Convert.ToDouble(Console.ReadLine());
+            double sideA = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Сторона B: ");
-            double triangleB = Convert.ToDouble(Console.ReadLine());
+            double sideB = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Сторона C: ");
-            double triangleC = Convert.ToDouble(Console.ReadLine());
+            double sideC = Convert.ToDouble(Console.ReadLine());
 
-            string result = library.TriangleArea(triangleA, triangleB, triangleC);
+            Triangle areaLibrary = new Triangle(sideA, sideB, sideC);
+            string result = areaLibrary.AreaCount().ToString();
+
             return result;
         }
 
@@ -72,12 +78,28 @@ namespace MindBoxTestConsoleClass
         /// <returns></returns>
         public static string CircleAreaResult()
         {
-            TestLibrary library = new TestLibrary();
-
-            Console.Write("Введи длину радиуса круга: ");
+            Console.WriteLine("Введите длину радиуса круга: ");
             double radius = Convert.ToDouble(Console.ReadLine());
 
-            string result = library.CircleArea(radius).ToString();
+            Circle areaLibrary = new Circle(radius);
+            string result = areaLibrary.AreaCount().ToString();
+
+            return result;
+        }
+
+        public static string RectangleAreaResult()
+        {
+            Console.WriteLine("Введите длины сторон прямоугольника: ");
+
+            Console.Write("Сторона А: ");
+            double sideA = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Сторона B: ");
+            double sideB = Convert.ToDouble(Console.ReadLine());
+
+            Rectangles areaLibrary = new Rectangles(sideA, sideB);
+            string result = areaLibrary.AreaCount().ToString();
+
             return result;
         }
 
@@ -87,52 +109,19 @@ namespace MindBoxTestConsoleClass
         /// <returns></returns>
         public static string AbstractFigureResult()
         {
-            TestLibrary library = new TestLibrary();
-            int question;
-
-            Console.WriteLine("Является ли выбранная вами фигура окружностью? 1.Да 2.Нет");
-            question = Convert.ToInt32(Console.ReadLine());
-
-            if (question == 1)
+            Object areaLibrary = new Object();
+            
+            if(areaLibrary is Triangle)
             {
-                string areaCircleResult = CircleAreaResult();
-                return areaCircleResult;
+                Triangle triangle = (Triangle)areaLibrary;
             }
-            else if (question == 2)
+            else if(areaLibrary is Circle)
             {
-                Console.WriteLine("Выберите тип вашего многоугольника: 1.Правильный 2.Неправильный");
-                question = Convert.ToInt32(Console.ReadLine());
-
-                if (question == 1)
-                {
-                    Console.Write("Вы сделали ПРАВИЛЬНЫЙ выбор.Теперь задайте пожалуйста длину стороны вашего многоугольника: ");
-                    double sideRight = Convert.ToDouble(Console.ReadLine());
-
-                    Console.Write("А теперь пожалуйста задайте количество сторон вашего многоугольника: ");
-                    int sideCount = Convert.ToInt32(Console.ReadLine());
-
-                    double areaResult = library.N_Angle_Area(sideRight, sideCount);
-
-                    return areaResult.ToString();
-                }
-                else if (question == 2)
-                {
-                   Console.WriteLine("Это оказалось сложнее чем я думал." +
-                       " Там формула размером с километр и учитывая что она одна на весь интернет я в ней сомеваюсь," +
-                       " поэтому тут я умываю руки увы." +
-                       "Зато можно попыться расписать, как можно было бы сделать эту задачу:" +
-                       "- Создать форму, в которой будет окно с клетками размером с условную единицу." +
-                       "- На этом окне начертить две оси. Масштаб окна увеличваеться в зависимости от вводных" +
-                       "- Далее даеться возможно выбрать количество сторон нащего многоугольника" +
-                       "- А после высвичвается возможность ввести размеры сторон по очереди" +
-                       "- После внесения первой стороны на рисуне появляеться отрезок. У отрезка определяються обе координаты" +
-                       "- После определения коордиант в рандомном порядке выбирается одна из начал отрезка" +
-                       "- От этого отрезка в призвольную сторону будет строиться второй" +
-                       "- С соблюдением ряда ограничением так рисуется произвольный многоугольник" +
-                       "- После мы применяем формулу вычисление площади произвольного многоугольника по коордианатам. " +
-                       "Реализацию подобного проекта счел нецелесообразным");
-                }
-
+                Circle circle = (Circle)areaLibrary;
+            }
+            else if(areaLibrary is Rectangles)
+            {
+                Rectangles rectangles = (Rectangles)areaLibrary;
             }
 
             return null;
