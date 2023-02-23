@@ -109,20 +109,18 @@ namespace MindBoxTestConsoleClass
         /// <returns></returns>
         public static string AbstractFigureResult()
         {
-            Object areaLibrary = new Object();
-            
-            if(areaLibrary is Triangle)
-            {
-                Triangle triangle = (Triangle)areaLibrary;
-            }
-            else if(areaLibrary is Circle)
-            {
-                Circle circle = (Circle)areaLibrary;
-            }
-            else if(areaLibrary is Rectangles)
-            {
-                Rectangles rectangles = (Rectangles)areaLibrary;
-            }
+            IFigure fig = new IFigure();
+            //1 сторона - это круг
+            fig.sides.Add(5);
+            //еще 2 стороны - это треугольник
+            fig.sides.Add(6);
+            fig.sides.Add(7);
+
+
+
+
+            FigCalc.Calc(fig);
+
 
             return null;
         }

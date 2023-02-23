@@ -8,13 +8,22 @@ namespace MindBoxTestLibraryClass
 {
     public class Triangle : Figure
     {
-        double sideA, sideB, sideC;
+        public double sideA, sideB, sideC;
 
         public Triangle(double sideA, double sideB, double sideC)
         {
             this.sideA = sideA;
             this.sideB = sideB;
             this.sideC = sideC;
+            //проверка входных данных в конструкторе
+            if (sideA < 0) throw new ArgumentException("sideA less zero");
+            if (sideC < 0) throw new ArgumentException("sideC less zero");
+            if (sideB < 0) throw new ArgumentException("sideB less zero");
+
+            if (sideA + sideB >= sideC && sideB + sideC >= sideA && sideA + sideC >= sideB)
+            {
+                throw new ArgumentException("wrong sides");
+            }
         }
 
 
@@ -37,7 +46,8 @@ namespace MindBoxTestLibraryClass
             }
             else
             {
-                Console.WriteLine("Трегульник с такими сторонами не имеет права не существование!");
+                //throw new ArgumentException("wrong sides");
+                //Console.WriteLine("Трегульник с такими сторонами не имеет права не существование!");
                 return 0;
             }
         }
@@ -48,7 +58,7 @@ namespace MindBoxTestLibraryClass
             Math.Pow(sideA, 2) + Math.Pow(sideC, 2) == Math.Pow(sideB, 2) ||
             Math.Pow(sideB, 2) + Math.Pow(sideC, 2) == Math.Pow(sideA, 2))
             {
-                Console.WriteLine("Этот треугольник прямоугольный");
+                //Console.WriteLine("Этот треугольник прямоугольный");
                 return true;
             }
             else

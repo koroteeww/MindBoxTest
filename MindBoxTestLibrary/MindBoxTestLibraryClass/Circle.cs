@@ -8,10 +8,11 @@ namespace MindBoxTestLibraryClass
 {
     public class Circle : Figure
     {
-        double radius;
+        public double radius;
 
         public Circle(double radius)
         {
+            if (radius < 0) throw new ArgumentException("radius less zero");
             this.radius = radius;
         }
 

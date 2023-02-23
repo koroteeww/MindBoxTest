@@ -8,10 +8,12 @@ namespace MindBoxTestLibraryClass
 {
     public class Rectangles : Figure
     {
-        double sideA, sideB;
+        public double sideA, sideB;
 
         public Rectangles(double sideA, double sideB)
         {
+            if (sideA < 0) throw new ArgumentException("sideA less zero");
+            if (sideB < 0) throw new ArgumentException("sideA less zero");
             this.sideA = sideA;
             this.sideB = sideB;
         }

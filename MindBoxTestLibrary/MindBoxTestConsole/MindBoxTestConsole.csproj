@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MindBoxTestLibraryClass\MindBoxTestLibraryClass.csproj" />
+    <Reference Include="MindBoxTestLibraryClass">
+      <HintPath>..\MindBoxTestLibraryClass\bin\Debug\net6.0\MindBoxTestLibraryClass.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
